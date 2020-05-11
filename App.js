@@ -1,19 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    // JET 2.0
+    // <WebView source={{ uri: 'https://jet.com' }} />
+    // Example Shopify Store
+    <WebView source={{ uri: 'https://narrative-theme-earthy.myshopify.com' }} />
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
